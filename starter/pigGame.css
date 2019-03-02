@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url("back.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    color: #555;
+    font-weight: 300;
+    font-family: Lato;
+}
+
+.wrapper {
+    background-color: #fff;
+    width: 1000px;
+    height: 600px;
+    margin: 150px auto;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+}
+
+.player-0-panel,
+.player-1-panel {
+    padding: 100px;
+    width: 50%;
+    height: 600px;
+    float: left;
+    background-color: white;   
+}
+
+/*Players*/
+
+.active {
+    background-color: #f7f7f7;
+}
+
+.active .player-name { 
+    font-weight: 300; 
+}
+
+.active .player-name::after {
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #EB4D4D;
+    margin-left: 13px;
+    top: 13%;
+    
+}
+
+.player-name {
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.player-current-score {
+    font-size: 80px;
+    font-weight: 100;
+    margin-bottom: 120px;
+    color: #EB4D4D;
+    text-align: center;
+}
+
+.player-total-box {
+    text-align: center;
+    background-color: #EB4D4D;
+    color: #fff;
+    margin-left: 60px;
+    margin: 0 auto;
+    padding: 12px;
+    width: 50%;
+    
+}
+
+.player-total-label {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #222;
+}
+
+.player-total-score {
+    font-size: 40px;
+
+}
+
+/*Buttons*/
+
+button {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 20px;
+    width: 200px;    
+    color: #555;
+    background: none;
+    border: none;    
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover { 
+    font-weight: 800; 
+}
+
+button:hover i { 
+    margin-right: 20px; 
+}
+
+button:focus {
+    outline: none;
+}
+
+.btn-new { 
+    top: 70px;
+}
+
+.btn-roll { 
+    top: 403px;
+    font-size: 25px;
+}
+
+.btn-hold { 
+    top: 467px;
+}
+
+i {
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+.dice {
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translateX(-50%);
+    height: 100px;
+    /*box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);*/
+}
+
+.winner { 
+    background-color: #eeeeee; 
+}
+.winner .player-name { 
+    font-weight: 800; 
+    color: #EB4D4D;
+}
+
+
