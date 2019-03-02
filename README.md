@@ -1,2 +1,3 @@
 # pig-game
-Pig dice game in Vanilla Javascript.
+
+2-player dice rolling Pig game in Vanilla Javscript.
